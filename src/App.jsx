@@ -8,7 +8,7 @@ import React from "react";
 const App = () => {
   return (
     <>
-      <Toaster position="bottom-center" />
+      <Toaster />
       <Header />
       <Home />
       <Footer />

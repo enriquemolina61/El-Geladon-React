@@ -11,7 +11,7 @@ const Card = ({ palette }) => {
       </div>
       <h3>{palette.sabor}</h3>
       <p>{palette.descricao}</p>
-      <button onClick={() => toast.error("Sessão em desenvolvimento")}>
+      <button onClick={() => toast.error("Área em desenvolvimento")}>
         Adicionar
       </button>
     </div>
