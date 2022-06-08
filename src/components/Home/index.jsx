@@ -12,7 +12,7 @@ const Home = () => {
     const response = await fetch("http://localhost:8080/paletas/listar-todas");
     const palettesList = await response.json();
 
-    console.log("Fez requisição");
+    
     setPalettes(palettesList);
   };
 
