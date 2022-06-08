@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     getPalettes();
-  }, []);
+  });
 
   return (
     <div className="home-container">
