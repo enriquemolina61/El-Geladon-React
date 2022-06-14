@@ -3,7 +3,6 @@ import logoIcon from "../../assets/icons/logo.svg";
 import whatsappIcon from "../../assets/images/whatsapp.png";
 import instagramIcon from "../../assets/images/instagram.png";
 import emailIcon from "../../assets/images/email.png";
-import React from "react";
 
 const Footer = () => {
   return (
