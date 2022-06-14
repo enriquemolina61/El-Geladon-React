@@ -17,18 +17,7 @@ const ModalNewPalette = ({ closeModal, getPalettes }) => {
       foto,
     };
 
-    // ----- REQUISIÇÃO COM FETCH
 
-    // const response = await fetch("http://localhost:8080/paletas/criar-paleta", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   mode: "cors",
-    //   body: JSON.stringify(newPalette),
-    // });
-
-    // ----- REQUISIÇÃO COM AXIOS
 
     const response = await api.post("/paletas/criar-paleta", newPalette);
 

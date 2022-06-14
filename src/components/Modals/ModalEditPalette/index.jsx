@@ -17,21 +17,7 @@ const ModalEditPalette = ({ closeModal, palette, getPalettes }) => {
       foto,
     };
 
-    // REQUISIÇÃO COM FETCH
 
-    // const response = await fetch(
-    //   `http://localhost:8080/paletas/atualizar-paleta/${palette._id}`,
-    //   {
-    //     method: "PUT",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     mode: "cors",
-    //     body: JSON.stringify(editedPalette),
-    //   }
-    // );
-
-    // REQUISIÇÃO COM AXIOS
 
     const response = await api.put(
       `/paletas/atualizar-paleta/${palette._id}`,

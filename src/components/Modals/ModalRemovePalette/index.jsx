@@ -1,21 +1,11 @@
 import "./style.css";
 import { toast } from "react-hot-toast";
 import api from "../../../api";
-// import { useEffect } from "react";
+
 
 const ModalRemovePalette = ({ closeModal, palette, getPalettes }) => {
   const handleRemovePalette = async () => {
-    // REQUISIÇÃO COM FETCH
 
-    // const response = await fetch(
-    //   `http://localhost:8080/paletas/excluir-paleta/${palette._id}`,
-    //   {
-    //     method: "DELETE",
-    //     mode: "cors",
-    //   }
-    // );
-
-    // REQUISIÇÃO COM AXIOS
 
     const response = await api.delete(`/paletas/excluir-paleta/${palette._id}`);
 
@@ -28,11 +18,7 @@ const ModalRemovePalette = ({ closeModal, palette, getPalettes }) => {
     toast.success("Paleta excluida com sucesso");
   };
 
-  // useEffect(() => {
-  //   return () => {
-  //     toast.success("Modal desmontou");
-  //   };
-  // }, []);
+
 
   return (
     <div className="modal-overlay">
