@@ -7,19 +7,16 @@ import { useState, useEffect } from "react";
 import api from "./api";
 
 const App = () => {
-  // Declaração dos states
   const [palettes, setPalettes] = useState([]);
 
-  // Declaração das funções
+
   const getPalettes = async () => {
     const response = await api.get("/paletas/listar-todas");
 
     setPalettes(response.data);
   };
 
-  // Declaração dos ciclos de vida
 
-  // Ciclo de vida de montagem (array vazio)
   useEffect(() => {
     getPalettes();
   }, []);
